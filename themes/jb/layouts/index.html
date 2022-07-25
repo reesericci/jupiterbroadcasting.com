@@ -25,10 +25,10 @@
             <div class="swiper-slide">
               <div class="card-image">
                 <figure class="image">
-                  <a href="{{ print .Permalink }}">
+                  <a href="{{ .Permalink }}">
                     <img
-                      src="{{ print .Params.header_image | absURL }}"
-                      alt="{{ print .Title }}"
+                      src="{{ .Params.header_image | absURL }}"
+                      alt="{{ .Title }}"
                       class="show-img"
                     />
                   </a>
@@ -69,4 +69,3 @@
 </section>
 
 {{ end }}
-
